@@ -70,7 +70,7 @@ class WheaterApp(QWidget):
         self.get_wheater_button.clicked.connect(self.get_wheater)
 
     def get_wheater(self):
-        api_key = ''
+        api_key = 'place your open weather API in here'
         city = self.city_input.text()
         url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
         try:
@@ -164,3 +164,4 @@ if __name__ == '__main__':
     weather_app = WheaterApp()
     weather_app.show()
     sys.exit(app.exec_())
+
